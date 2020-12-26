@@ -1,0 +1,94 @@
+.pizza-countries {
+  word-break: break-word;
+  min-width: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 50px auto;
+}
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+tbody tr {
+  animation: tableRow 0.5s ease-in-out forwards;
+}
+@keyframes tableRow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+th {
+  background: #ff7474;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  padding: 10px;
+  border: 1px solid #868686;
+  text-align: left;
+  font-size: 18px;
+}
+td a {
+  padding: 5px 10px;
+  background-color: #ff7474;
+  color: white;
+  border-radius: 3px;
+}
+td a:hover {
+  color: #868686;
+}
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  table {
+    margin: 50px auto 25px auto;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+  tr:nth-of-type(odd) td {
+    border-color: white;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 35%;
+  }
+  td a {
+    padding: 5px 20px;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 35%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-column);
+    color: #000;
+    font-weight: bold;
+  }
+}

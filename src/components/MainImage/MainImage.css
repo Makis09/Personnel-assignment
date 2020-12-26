@@ -1,0 +1,6 @@
+.MainImage img {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  height: 80vh;
+  object-fit: cover;
+}

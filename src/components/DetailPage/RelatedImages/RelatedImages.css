@@ -1,0 +1,10 @@
+.RelatedImages {
+  text-align: center;
+}
+.RelatedImages h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+.RelatedImages img {
+  max-width: 100%;
+}

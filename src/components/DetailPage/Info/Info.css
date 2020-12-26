@@ -1,0 +1,57 @@
+.Ingredients ul li {
+  display: inline-block;
+  background-color: #ff7474;
+  color: white;
+  border-radius: 10px;
+  margin: 3px;
+  padding: 0 10px;
+}
+.Ingredients ul {
+  padding: 0;
+}
+.DetailPageHeader {
+  text-align: center;
+}
+.DetailPageHeader h2 {
+  display: inline-block;
+  background-color: #868686;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+.Country span {
+  word-break: break-word;
+}
+.Allergens,
+.Brand,
+.Country {
+  margin: 5px 0;
+}
+
+.Info svg {
+  margin-right: 3px;
+  color: #ff7474;
+}
+.Info .caption {
+  color: #868686;
+  font-weight: 500;
+}
+.Info .description {
+  color: #353333;
+  font-weight: 500;
+}
+
+.Info,
+.MainImage,
+.RelatedImages {
+  animation: animate 0.5s ease-in-out forwards;
+}
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

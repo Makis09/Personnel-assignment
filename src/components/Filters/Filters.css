@@ -1,0 +1,87 @@
+.FiltersHolder input {
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+}
+.FiltersHolder label {
+  padding: 5px 10px;
+  width: 100px;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  border-radius: 5px;
+  color: white;
+}
+.SingleFilter {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+.FiltersHolder {
+  text-align: center;
+  border: 2px solid #d4cfcf;
+  border-radius: 100px;
+}
+.Filters {
+  margin: 50px auto 0 auto;
+  flex: 0 0 75%;
+  transition: bottom 200ms ease-in-out;
+}
+.Filters h6 {
+  padding-left: 50px;
+}
+.Filters .closeFilters {
+  display: none;
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) {
+  .Filters {
+    margin: 50px auto 0 auto;
+    flex: 0 0 85%;
+  }
+  .FiltersHolder {
+    border-radius: 20px;
+  }
+  .Filters h6 {
+    padding-left: 20px;
+    z-index: 100;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .Filters {
+    position: fixed;
+    bottom: -180px;
+    z-index: 100;
+    background-color: white;
+    margin: 0;
+  }
+  .FiltersHolder {
+    border: none;
+  }
+  .SingleFilter {
+    margin: 5px;
+  }
+  .Filters h6 {
+    background-color: grey;
+    margin-bottom: 0;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .Filters.mobileFilterExpanded {
+    bottom: 0;
+  }
+  .mobileFilterExpanded .showFilters {
+    display: none;
+  }
+  .Filters.mobileFilterExpanded .closeFilters {
+    display: block;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .FiltersHolder label {
+    width: 85px;
+    padding: 5px;
+  }
+}
